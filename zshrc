@@ -26,3 +26,7 @@ plugins=(git vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+if [[ -z $TMUX ]]; then
+  tmux attach -d
+fi
