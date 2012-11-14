@@ -19,8 +19,8 @@ function puppetversion() {
 PROMPT='⌈%{$fg[red]%}(%{$fg[white]%}%h%{$fg[red]%}) %{$fg[blue]%}%~ %{$reset_color%}% %{$reset_color%}%{$fg[white]%} vms(%{$fg[magenta]%}%{$(vmfusionlist)%}%{$fg[white]%}) puppet(%{$fg[magenta]%}%{$(puppetversion)%}%{$fg[white]%})%{$reset_color%} %{$(git_prompt_info)%}
 ⌊%{$fg[black]%}%# '
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}[%{$fg[magenta]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$fg[white]%}] "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}(%{$fg[magenta]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$fg[white]%}) "
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[white]%}☺%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[white]%}☹%{$reset_color%}"
 

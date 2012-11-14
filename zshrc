@@ -27,6 +27,32 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+## dirs
+vim_swap=${HOME}/.vimswp
+[[ ! -d $vim_swap ]] && mkdir -p $vim_swap
+
+## options
+setopt nobeep
+setopt prompt_subst
+setopt nopromptcr
+setopt extendedglob
+unsetopt nomatch
+setopt inc_append_history
+setopt extended_history
+setopt hist_ignore_space
+unsetopt histverify
+setopt hist_ignore_dups
+
+## environment
+EDITOR="vim"
+PAGER="less"
+HISTFILE=$HOME/.histfile
+HISTSIZE=50000
+SAVEHIST=$HISTSIZE
+
+## tmux
 if [[ -z $TMUX ]]; then
   tmux attach -d
 fi
+
+
