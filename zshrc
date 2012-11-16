@@ -43,12 +43,17 @@ setopt hist_ignore_space
 unsetopt histverify
 setopt hist_ignore_dups
 
-## environment
-EDITOR="vim"
-PAGER="less"
+# history
+bindkey -v
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
 HISTFILE=$HOME/.histfile
 HISTSIZE=50000
 SAVEHIST=$HISTSIZE
+
+## environment
+EDITOR="vim"
+PAGER="less"
 
 ## tmux
 if [[ -z $TMUX ]]; then
