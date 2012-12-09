@@ -54,6 +54,7 @@ SAVEHIST=$HISTSIZE
 ## environment
 EDITOR="vim"
 PAGER="less"
+PATH=$PATH:/Applications/AndroidSDK/sdk/platform-tools
 
 ## tmux
 if [[ -z $TMUX ]]; then
